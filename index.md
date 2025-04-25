@@ -1,6 +1,12 @@
 ## Lilly Jones, PhD
+# Hydrogeologist and Environmental Hazards Modeler
+
 PhD South Dakota School of Mines and Technology, 2021, Geology and Geological Engineering. 
+
 BS Oglala Lakota College, 2013, Interdisciplinary Earth and Environmental Sciences.
+
+- [GitHub](https://github.com/lijo8146)
+- [LinkedIn](https://www.linkedin.com/in/lillysanovia/)
 
 I work at [CIRES Earth Lab](https://earthlab.colorado.edu).
 
@@ -11,3 +17,5 @@ I do advanced geospatial analysis and environmental hazards modeling, primarily 
 I am also one of the teaching assistants for [Earth Lab's Earth Data Science certificate course](https://www.earthdatascience.org). 
 
 As a Tribal college graduate and former Tribal college faculty at [Oglala Lakota College](https://www.olc.edu), I am also actively involved in building models, data cubes, and workflows to support our growing base of Tribal partners.
+
+
