@@ -9,7 +9,7 @@ BS Oglala Lakota College, 2013, Interdisciplinary Earth and Environmental Scienc
 - [LinkedIn](https://www.linkedin.com/in/lillysanovia/)
 - [Project site](https://sites.google.com/view/yawapi/home)
 
-![Lilly Jones](https://media.licdn.com/dms/image/v2/D5603AQFPILozGihipA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1682452873179?e=1750896000&v=beta&t=HvOyzcir0HX4Skp-x0aX_6uzJtvptoqHUQ2Ej8cFUEk)
+![Lilly Jones](https://lh5.googleusercontent.com/9AokPmzrra5-H3F3qYtk7KkIYiX3ZZZSoI1a49WYJAzdEMXE6jgaN4QiS6255EGRM6V_bKMcWayW8izMY3yVueDGRi9i9R3VXZ9q1hoxgBC4hYUQA7kciva_ZeiLoPb9FA=w1280)
 
 I work at [CIRES Earth Lab](https://earthlab.colorado.edu).
 
