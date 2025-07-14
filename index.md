@@ -1,4 +1,5 @@
 # Lilly Jones, PhD
+![alt-text or caption](url or path)
 ### Hydrogeologist and Environmental Hazards Modeler
 
 PhD South Dakota School of Mines and Technology, 2021, Geology and Geological Engineering. 
