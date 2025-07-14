@@ -1,5 +1,5 @@
 # Lilly Jones, PhD
-![alt-text or caption](url or path)
+![Lilly Jones](https://cires.colorado.edu/people/lilly-jones)
 ### Hydrogeologist and Environmental Hazards Modeler
 
 PhD South Dakota School of Mines and Technology, 2021, Geology and Geological Engineering. 
