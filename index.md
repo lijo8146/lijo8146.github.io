@@ -1,5 +1,5 @@
 # Lilly Jones, PhD
-![Lilly Jones](https://www.google.com/url?sa=i&url=https%3A%2F%2Fncse.ngo%2Flilly-jones&psig=AOvVaw0qlRiUu4WDB8xt7JF68nux&ust=1752614457286000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCJDtxuWjvY4DFQAAAAAdAAAAABAM)
+![Lilly Jones](https://lh3.googleusercontent.com/VFq5ImApa-GSwR5w1uPofBEV4ZvMK5ENlGUA9zPh_-HhR2dzWnZ2JQvHFNJsWZnTF-SPSatopVuJA80N9LZpXWo-E3RypLOOBMpYPGhg9ZQtGNhzME06nf6ljRW8WPXeky4Emg9qXWOPv8RFjrA_8Wj3vFb8qPE3ASwgMbDaNYaUQa7_Lu0mmA=w1280)
 ### Hydrogeologist and Environmental Hazards Modeler
 
 PhD South Dakota School of Mines and Technology, 2021, Geology and Geological Engineering. 
