@@ -1,7 +1,21 @@
-# lijo8146.github.io
-**Lilly Jones-Sanovia, PhD**
-- Postdoctoral Associate
-- CIRES Earth Lab
-- CU Boulder
+---
+layout: splash
+permalink: /
+header:
+  overlay_color: "#003366"  # deep university blue
+  overlay_filter: 0.25
+  caption: "Modern Data Lab"
+  actions:
+    - label: "Explore Research"
+      url: "/research/"
+    - label: "Publications"
+      url: "/publications/"
+---
 
-[![DOI](https://zenodo.org/badge/642474652.svg)](https://zenodo.org/badge/latestdoi/642474652)
+## Welcome!
+
+I focus on research in natural hazards, integrating data science, geospatial analysis, and computational modeling.  
+My goal is to bridge theory and practice in modern research workflows.
+
+[Learn About My Work  ](/research/)
+[Contact  ](/contact/)
