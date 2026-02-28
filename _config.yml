@@ -1,4 +1,50 @@
-name: null
-title: null
-logo: https://avatars.githubusercontent.com/u/131408480?s=400&u=fb740e3bf58c2377aa17ad62640de5a836538df9&v=4
-theme: jekyll-theme-hacker
+title: "Lilly Jones, PhD | Earth and ESIIL Labs"
+description: "Research, Projects, and Teaching at CU Boulder"
+url: "https://lijo8146.github.io"
+baseurl: "" 
+lang: "en-US"
+
+remote_theme: "mmistakes/minimal-mistakes"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+author:
+  name: "Lilly Jones, PhD"
+  email: "lijo8146@colorado.edu"
+
+minimal_mistakes_skin: "default"
+
+# Navigation
+nav:
+  - title: "Home"
+    url: /
+  - title: "Research"
+    url: /research/
+  - title: "Publications"
+    url: /publications/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Contact"
+    url: /contact/
+
+# Footer links
+footer:
+  links:
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:lijo8146@colorado.edu"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/lijo8146"
+
+# Appearance / SEO
+breadcrumbs: false
+search: false
+read_time: false
+show_date: false
+share: false
+
+# Accent colors
+accent_color: "#007F7F"  # muted teal
