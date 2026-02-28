@@ -4,8 +4,7 @@ url: "https://lijo8146.github.io"
 baseurl: "" 
 lang: "en-US"
 
-remote_theme: "mmistakes/minimal-mistakes"
-
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
