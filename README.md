@@ -18,14 +18,3 @@ Leadership & Service
 Technical Lead, Maka Sitomniye Working Group
 Instructor, Earth Lab Earth Data Science Certificate
 As a Tribal college graduate and former Tribal college faculty member at Oglala Lakota College, I am actively engaged in developing data models, geospatial data cubes, and reproducible, sovereignty-aligned workflows that support Tribal partners and Earth and environmental research.
-
-Research Focus Areas
-Hydrogeologic modeling
-Fire–vegetation predictive modeling
-Multispectral remote sensing integration
-Geospatial data engineering
-Environmental hazard risk modeling
-Reproducible computational workflows
-Links
-GitHub: https://github.com/lijo8146
-LinkedIn: https://www.linkedin.com/in/lillyjones3/
