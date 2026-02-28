@@ -1,5 +1,6 @@
-Lilly Jones, PhD
-Hydrogeologist | Environmental Hazards Modeler | Geospatial Data Scientist | Hydrologic and Wildfire Modeling | Python (20+ yrs) | University Instructor | Cloud & HPC
+# Lilly Jones, PhD
+
+# # Hydrogeologist | Geospatial Data Scientist | Hydrologic and Wildfire Modeling | Python (20+ yrs) | University Instructor | Cloud & HPC
 
 PhD, Geology and Geological Engineering, 2021
 South Dakota School of Mines and Technology
@@ -17,4 +18,5 @@ This work integrates multispectral remote sensing data, large environmental data
 Leadership & Service
 Technical Lead, Maka Sitomniye Working Group
 Instructor, Earth Lab Earth Data Science Certificate
+
 As a Tribal college graduate and former Tribal college faculty member at Oglala Lakota College, I am actively engaged in developing data models, geospatial data cubes, and reproducible, sovereignty-aligned workflows that support Tribal partners and Earth and environmental research.
