@@ -1,6 +1,6 @@
 # Lilly Jones, PhD
 
-## Hydrogeologist | Geospatial Data Scientist | Hydrologic and Wildfire Modeling | Python (20+ yrs) | University Instructor | Cloud & HPC
+### Hydrogeologist | Geospatial Data Scientist | Hydrologic and Wildfire Modeling | Python (20+ yrs) | University Instructor | Cloud & HPC
 
 PhD, Geology and Geological Engineering, 2021
 South Dakota School of Mines and Technology
