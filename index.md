@@ -5,7 +5,7 @@ title: "Lilly Jones, PhD"
 header:
   overlay_color: "#003366"
   overlay_filter: 0.3
-  caption: "Hydrogeologist | Environmental Hazards Modeler | Geospatial Data Scientist | Hydrologic and Wildfire Modeling | Python (20+ yrs) | University Instructor | Cloud & HPC"
+  caption: "Environmental Hazards Modeler | Geospatial Data Scientist | Hydrologic and Wildfire Modeling | University Instructor | Cloud & HPC"
   actions:
     - label: "View GitHub"
       url: "https://github.com/lijo8146"
@@ -15,7 +15,7 @@ header:
 
 # Lilly Jones, PhD
 
-Hydrogeologist | Environmental Hazards Modeler | Geospatial Data Scientist | Hydrologic and Wildfire Modeling | Python (20+ yrs) | University Instructor | Cloud & HPC 
+Environmental Hazards Modeler | Geospatial Data Scientist | Hydrologic and Wildfire Modeling | University Instructor | Cloud & HPC 
 
 PhD, Geology and Geological Engineering, 2021  
 South Dakota School of Mines and Technology  
