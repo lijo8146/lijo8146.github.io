@@ -1,5 +1,5 @@
 # Lilly Jones, PhD
-**Environmental Hazards Modeler · Geospatial Data Scientist**  
+**Instructor · Environmental Hazards Modeler · Geospatial Data Scientist**  
 CIRES Earth and ESIIL Labs · University of Colorado Boulder
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-lillyjones3-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/lillyjones3/)
@@ -54,7 +54,8 @@ As a Tribal college graduate and former Tribal college faculty member at Oglala 
 | Role           | Description |
 | **Instructor** | Earth Lab Earth Data Science Certificate, CU Boulder |
 | **Principal Investigator** | Shadow Ecology: Model Residuals as Signal, CIRES, CU Boulder |
-| **Owner / Data Scientist** | Daear Consulting, LLC — USDA-NIFA grant with Oglala Lakota College |
+| **Owner / Data Scientist** | Daear Consulting, LLC USDA-NIFA grant with Oglala Lakota College |
+| **Participant** | American Geophysical Union | Voices in Science
 | **Former Faculty** | Oglala Lakota College |
 | **Former Technical Lead** | Maka Sitomniye Working Group |
 
