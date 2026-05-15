@@ -1,22 +1,42 @@
 # Lilly Jones, PhD
+**Environmental Hazards Modeler · Geospatial Data Scientist**  
+Earth Lab · CIRES · ESIIL · University of Colorado Boulder
 
-### Hydrogeologist | Geospatial Data Scientist | Hydrologic and Wildfire Modeling | Python (20+ yrs) | University Instructor | Cloud & HPC
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-lillyjones3-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/lillyjones3/)
+[![Daear Consulting](https://img.shields.io/badge/GitHub-daearconsulting-181717?style=flat&logo=github)](https://github.com/daearconsulting)
 
-PhD, Geology and Geological Engineering, 2021
+## About
+I am a hydrogeologist and environmental hazards modeler working at Earth Lab, CIRES, and ESIIL at the University of Colorado Boulder. My work focuses on predictive fire–vegetation modeling, hydrologic analysis, and geospatial data science — building reproducible computational pipelines that translate environmental complexity into actionable models.
+
+Current CIRES-funded research investigates whether geospatial structure in model residuals can be leveraged to improve predictions in data- and sensor-poor regions.
+
+I am also the owner and primary data scientist of **[Daear Consulting, LLC](https://github.com/daearconsulting)**, currently partnering with [Oglala Lakota College](https://github.com/olc-techsupport) on a USDA-NIFA funded grant to build hydrologic and agricultural data cubes for analysis, teaching, and data sovereignty workflows.
+
+As a Tribal college graduate and former Tribal college faculty member at Oglala Lakota College, I am committed to sovereignty-aligned workflows and reproducible science that centers Tribal partners in environmental research.
+
+## Research Focus
+- Hydrogeologic modeling
+- Fire–vegetation predictive modeling
+- Multispectral remote sensing integration
+- Geospatial structure in model residuals (data/sensor-poor environments)
+- Geospatial data engineering & data cubes
+- Environmental hazard risk modeling
+- Reproducible computational workflows
+
+## Tools & Stack
+`Python` `R` `ArcGIS` `QGIS` `CyVerse` `HPC` `Remote Sensing` `xarray` `GDAL`
+
+## Leadership & Service
+| | Role |
+|---|---|
+| **Technical Lead** | Maka Sitomniye Working Group |
+| **Instructor** | Earth Lab Earth Data Science Certificate, CU Boulder |
+| **Owner / Data Scientist** | Daear Consulting, LLC — USDA-NIFA grant with Oglala Lakota College |
+| **Former Faculty** | Oglala Lakota College |
+
+## Education
+**PhD, Geology and Geological Engineering** · 2021  
 South Dakota School of Mines and Technology
 
-BS, Interdisciplinary Earth and Environmental Sciences, 2013
+**BS, Interdisciplinary Earth & Environmental Sciences** · 2013  
 Oglala Lakota College
-
-About
-I am a hydrogeologist and environmental hazards modeler working at CIRES Earth and ESIIL Labs at the University of Colorado Boulder.
-
-My work focuses on advanced geospatial analysis and environmental hazards modeling, primarily hydrologic and wildfire modeling. I work with a dynamic interdisciplinary team developing predictive fire–vegetation models to inform fire mitigation and resilience strategies.
-
-This work integrates multispectral remote sensing data, large environmental datasets, and reproducible computational pipelines. Our geospatial Python stack and modeling framework rely on advanced data analysis tools, including Python, R, ArcGIS, QGIS, Amazon Web Services, and High-Performance Computing environments.
-
-Leadership & Service
-Technical Lead, Maka Sitomniye Working Group
-Instructor, Earth Lab Earth Data Science Certificate
-
-As a Tribal college graduate and former Tribal college faculty member at Oglala Lakota College, I am actively engaged in developing data models, geospatial data cubes, and reproducible, sovereignty-aligned workflows that support Tribal partners and Earth and environmental research.
