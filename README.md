@@ -22,6 +22,8 @@ As a Tribal college graduate and former Tribal college faculty member at Oglala 
 - Geospatial data engineering & data cubes
 - Environmental hazard risk modeling
 - Reproducible computational workflows
+- Tribal Data Science
+- Tribal Data Sovereignty
 
 ## Tools & Stack
 
