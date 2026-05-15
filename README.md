@@ -53,17 +53,16 @@ As a Tribal college graduate and former Tribal college faculty member at Oglala 
 
 ## Leadership & Service
 
-| Role           | Description |
-| **Instructor** | Earth Lab Earth Data Science Certificate, CU Boulder |
-| **Principal Investigator** | Shadow Ecology: Model Residuals as Signal, CIRES, CU Boulder |
+| Role                       | Description                                                        |
+| -------------------------- | ------------------------------------------------------------------ |
+| **Instructor**             | Earth Lab Earth Data Science Certificate, CU Boulder               |
+| **Principal Investigator** | *Shadow Ecology: Model Residuals as Signal*, CIRES, CU Boulder     |
 | **Owner / Data Scientist** | Daear Consulting, LLC USDA-NIFA grant with Oglala Lakota College |
-| **Participant** | American Geophysical Union | Voices in Science
-| **Former Faculty** | Oglala Lakota College |
-| **Former Technical Lead** | Maka Sitomniye Working Group |
-
+| **Participant**            | American Geophysical Union *Voices in Science*                   |
+| **Former Faculty**         | Oglala Lakota College                                              |
+| **Former Technical Lead**  | Maka Sitomniye Working Group                                       |
 
 ## Education
-
 **PhD, Geology and Geological Engineering** · 2021  
 South Dakota School of Mines and Technology
 
