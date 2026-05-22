@@ -11,19 +11,38 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg:       #0c1a24;
-    --bg2:      #0f2030;
-    --bg3:      #142535;
-    --text:     #ddd8cc;
-    --muted:    #8a9aaa;
-    --green:    #6ba88a;
-    --green2:   #4d8a6e;
-    --amber:    #c9884c;
-    --amber2:   #a86c36;
-    --border:   rgba(107,168,138,0.18);
-    --serif:    'Cormorant Garamond', Georgia, serif;
-    --sans:     'Jost', system-ui, sans-serif;
-    --mono:     'JetBrains Mono', monospace;
+    /* Backgrounds */
+    --bg:     #080f14;
+    --bg2:    #0c1820;
+    --bg3:    #111f2b;
+    --bg4:    #162536;
+
+    /* Text */
+    --text:   #eae4d8;
+    --muted:  #7a94a8;
+
+    /* Primary: vivid turquoise  water, hydrology */
+    --teal:   #00c9b1;
+    --teal2:  #00a896;
+    --teal3:  #007f73;
+
+    /* Secondary: terracotta/coral  fire, earth, He Sapa */
+    --coral:  #e8622a;
+    --coral2: #c44e1f;
+    --coral3: #ff8055;
+
+    /* Accent: bright gold */
+    --gold:   #f5c842;
+    --gold2:  #d4a820;
+
+    /* Border */
+    --border: rgba(0,201,177,0.15);
+    --borderw: rgba(0,201,177,0.25);
+
+    /* Fonts */
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans:  'Jost', system-ui, sans-serif;
+    --mono:  'JetBrains Mono', monospace;
   }
 
   html { scroll-behavior: smooth; }
@@ -44,7 +63,31 @@
     inset: 0;
     z-index: 0;
     pointer-events: none;
-    opacity: 0.045;
+    opacity: 0.06;
+  }
+
+  .topo-line {
+    stroke: var(--teal);
+    stroke-width: 0.9;
+    fill: none;
+    animation: drift 38s linear infinite;
+  }
+
+  @keyframes drift {
+    from { transform: translateY(0); }
+    to   { transform: translateY(-120px); }
+  }
+
+  /* ── Gradient noise overlay for depth ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse 70% 50% at 15% 30%, rgba(0,168,150,0.07) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 85% 70%, rgba(232,98,42,0.06) 0%, transparent 55%);
   }
 
   /* ── Nav ── */
@@ -55,9 +98,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.1rem 2.5rem;
-    background: rgba(12,26,36,0.82);
-    backdrop-filter: blur(12px);
+    padding: 1rem 2.5rem;
+    background: rgba(8,15,20,0.88);
+    backdrop-filter: blur(14px);
     border-bottom: 0.5px solid var(--border);
   }
 
@@ -86,7 +129,7 @@
     transition: color 0.2s;
   }
 
-  .nav-links a:hover { color: var(--green); }
+  .nav-links a:hover { color: var(--teal); }
 
   /* ── Main wrapper ── */
   main {
@@ -102,20 +145,21 @@
     padding: 6rem 2.5rem 4rem;
     max-width: 1100px;
     margin: 0 auto;
+    position: relative;
   }
 
   .hero-inner {
-    max-width: 760px;
+    max-width: 780px;
     opacity: 0;
-    transform: translateY(28px);
-    animation: fadeUp 1s cubic-bezier(0.22,1,0.36,1) 0.2s forwards;
+    transform: translateY(32px);
+    animation: fadeUp 1s cubic-bezier(0.22,1,0.36,1) 0.15s forwards;
   }
 
   .hero-label {
     font-family: var(--mono);
     font-size: 0.72rem;
-    letter-spacing: 0.16em;
-    color: var(--green);
+    letter-spacing: 0.18em;
+    color: var(--teal);
     text-transform: uppercase;
     margin-bottom: 1.4rem;
     display: flex;
@@ -126,36 +170,40 @@
   .hero-label::before {
     content: '';
     display: inline-block;
-    width: 32px;
-    height: 1px;
-    background: var(--green);
+    width: 36px;
+    height: 1.5px;
+    background: linear-gradient(90deg, var(--teal), var(--teal2));
   }
 
   .hero-name {
     font-family: var(--serif);
-    font-size: clamp(3.2rem, 7vw, 6rem);
+    font-size: clamp(3.4rem, 7.5vw, 6.5rem);
     font-weight: 300;
-    line-height: 1.05;
+    line-height: 1.02;
     letter-spacing: -0.01em;
-    color: #e8e2d5;
+    /* Gradient text */
+    background: linear-gradient(135deg, #f0ebe0 20%, var(--teal) 75%, var(--teal3) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 0.3rem;
   }
 
   .hero-phd {
     font-family: var(--serif);
-    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-size: clamp(1.3rem, 2.8vw, 1.9rem);
     font-weight: 300;
     font-style: italic;
-    color: var(--amber);
-    margin-bottom: 1.8rem;
+    color: var(--coral3);
+    margin-bottom: 2rem;
   }
 
   .hero-tagline {
-    font-size: 0.95rem;
+    font-size: 0.97rem;
     color: var(--muted);
-    line-height: 1.7;
-    max-width: 580px;
-    margin-bottom: 2.8rem;
+    line-height: 1.75;
+    max-width: 600px;
+    margin-bottom: 3rem;
     font-weight: 300;
   }
 
@@ -166,7 +214,7 @@
 
   .hero-ctas {
     display: flex;
-    gap: 1rem;
+    gap: 0.85rem;
     flex-wrap: wrap;
   }
 
@@ -174,7 +222,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.65rem 1.4rem;
+    padding: 0.65rem 1.5rem;
     font-family: var(--mono);
     font-size: 0.73rem;
     letter-spacing: 0.1em;
@@ -186,25 +234,27 @@
   }
 
   .btn-primary {
-    background: var(--green2);
-    color: #d8eedf;
-    border: 1px solid var(--green2);
+    background: var(--teal3);
+    color: #c8f5ef;
+    border: 1px solid var(--teal3);
   }
 
   .btn-primary:hover {
-    background: var(--green);
-    border-color: var(--green);
+    background: var(--teal2);
+    border-color: var(--teal2);
+    box-shadow: 0 0 20px rgba(0,201,177,0.25);
   }
 
   .btn-outline {
     background: transparent;
     color: var(--muted);
-    border: 1px solid rgba(138,154,170,0.35);
+    border: 1px solid rgba(138,154,170,0.3);
   }
 
   .btn-outline:hover {
-    border-color: var(--amber);
-    color: var(--amber);
+    border-color: var(--coral);
+    color: var(--coral3);
+    box-shadow: 0 0 16px rgba(232,98,42,0.15);
   }
 
   /* ── Scroll hint ── */
@@ -214,10 +264,10 @@
     left: 2.5rem;
     font-family: var(--mono);
     font-size: 0.65rem;
-    letter-spacing: 0.12em;
-    color: var(--muted);
+    letter-spacing: 0.14em;
+    color: var(--teal3);
     text-transform: uppercase;
-    opacity: 0.6;
+    opacity: 0.7;
     display: flex;
     align-items: center;
     gap: 0.6rem;
@@ -227,7 +277,7 @@
     content: '';
     width: 1px;
     height: 36px;
-    background: linear-gradient(to bottom, var(--muted), transparent);
+    background: linear-gradient(to bottom, var(--teal), transparent);
     display: inline-block;
   }
 
@@ -235,7 +285,7 @@
   .section {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 5rem 2.5rem;
+    padding: 5.5rem 2.5rem;
     opacity: 0;
     transform: translateY(24px);
     transition: opacity 0.7s ease, transform 0.7s ease;
@@ -250,10 +300,10 @@
   .sec-label {
     font-family: var(--mono);
     font-size: 0.68rem;
-    letter-spacing: 0.18em;
-    color: var(--amber);
+    letter-spacing: 0.2em;
+    color: var(--coral);
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 0.9rem;
     display: flex;
     align-items: center;
     gap: 0.7rem;
@@ -261,26 +311,30 @@
 
   .sec-label::before {
     content: '';
-    width: 24px;
-    height: 1px;
-    background: var(--amber);
+    width: 26px;
+    height: 1.5px;
+    background: linear-gradient(90deg, var(--coral), var(--coral2));
     display: inline-block;
   }
 
   .sec-title {
     font-family: var(--serif);
-    font-size: clamp(1.9rem, 3.5vw, 2.6rem);
+    font-size: clamp(2rem, 3.8vw, 2.8rem);
     font-weight: 300;
-    color: #e4ddd0;
-    line-height: 1.2;
-    margin-bottom: 2.4rem;
+    line-height: 1.15;
+    margin-bottom: 2.5rem;
+    background: linear-gradient(110deg, #ece6da 30%, var(--teal) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   /* ── Divider ── */
   .divider {
     height: 1px;
-    background: linear-gradient(90deg, var(--border), transparent 70%);
+    background: linear-gradient(90deg, transparent, var(--teal3), rgba(0,201,177,0.2), transparent);
     margin: 0 2.5rem;
+    opacity: 0.6;
   }
 
   /* ── About ── */
@@ -291,7 +345,7 @@
     align-items: start;
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 780px) {
     .about-grid { grid-template-columns: 1fr; gap: 3rem; }
   }
 
@@ -303,29 +357,54 @@
 
   .about-text p:last-child { margin-bottom: 0; }
 
+  .about-text p:first-child {
+    padding-left: 1.2rem;
+    border-left: 2.5px solid var(--teal2);
+    font-size: 1.07rem;
+    color: #ddd8cc;
+  }
+
+  .about-text a {
+    color: var(--teal);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,201,177,0.35);
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .about-text a:hover {
+    color: var(--teal3);
+    border-color: var(--teal3);
+  }
+
   /* ── Sidebar ── */
   .sidebar-card {
     background: var(--bg2);
     border: 0.5px solid var(--border);
-    border-radius: 4px;
-    padding: 1.6rem;
+    border-radius: 3px;
+    padding: 1.5rem 1.6rem;
+    transition: border-color 0.2s;
   }
 
-  .sidebar-card + .sidebar-card { margin-top: 1.2rem; }
+  .sidebar-card:hover {
+    border-color: rgba(0,201,177,0.3);
+  }
+
+  .sidebar-card + .sidebar-card { margin-top: 1rem; }
 
   .sidebar-label {
     font-family: var(--mono);
     font-size: 0.65rem;
-    letter-spacing: 0.15em;
-    color: var(--green);
+    letter-spacing: 0.16em;
+    color: var(--teal);
     text-transform: uppercase;
     margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0,201,177,0.12);
   }
 
   /* ── Education ── */
-  .edu-item {
-    margin-bottom: 1.4rem;
-  }
+  .edu-item { margin-bottom: 1.3rem; }
+  .edu-item:last-child { margin-bottom: 0; }
 
   .edu-degree {
     font-family: var(--serif);
@@ -337,98 +416,118 @@
 
   .edu-field {
     font-style: italic;
-    color: var(--amber);
+    color: var(--coral3);
   }
 
   .edu-school {
     font-size: 0.83rem;
     color: var(--muted);
-    margin-top: 0.25rem;
-    font-family: var(--sans);
+    margin-top: 0.22rem;
   }
 
   .edu-year {
     font-family: var(--mono);
     font-size: 0.7rem;
-    color: var(--green);
+    color: var(--teal);
     display: inline-block;
-    margin-right: 0.4rem;
+    margin-right: 0.35rem;
+  }
+
+  /* ── Stack tags ── */
+  .stack-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 0.4rem;
+  }
+
+  .stack-tag {
+    font-family: var(--mono);
+    font-size: 0.67rem;
+    letter-spacing: 0.05em;
+    padding: 0.26rem 0.65rem;
+    border-radius: 2px;
+    background: rgba(0,201,177,0.07);
+    color: var(--teal);
+    border: 0.5px solid rgba(0,201,177,0.22);
+    transition: all 0.15s;
+  }
+
+  .stack-tag:hover {
+    background: rgba(0,201,177,0.14);
+    border-color: rgba(0,201,177,0.45);
+    color: var(--teal);
   }
 
   /* ── Research grid ── */
   .research-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 1px;
-    border: 1px solid var(--border);
+    border: 1px solid rgba(0,201,177,0.12);
     border-radius: 4px;
     overflow: hidden;
-    background: var(--border);
+    background: rgba(0,201,177,0.1);
   }
 
   .research-item {
     background: var(--bg2);
-    padding: 1.5rem 1.4rem;
-    transition: background 0.2s;
+    padding: 1.7rem 1.5rem;
+    transition: background 0.2s, border-color 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .research-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0; height: 2px;
+    background: linear-gradient(90deg, var(--teal), var(--coral));
+    transition: width 0.3s ease;
   }
 
   .research-item:hover { background: var(--bg3); }
+  .research-item:hover::before { width: 100%; }
 
   .research-icon {
-    font-size: 1.4rem;
-    margin-bottom: 0.7rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
     display: block;
     font-family: var(--mono);
-    color: var(--green);
+    color: var(--teal);
+    opacity: 0.8;
   }
 
   .research-name {
-    font-size: 0.88rem;
+    font-size: 0.9rem;
     color: var(--text);
     font-weight: 400;
     line-height: 1.4;
   }
 
-  /* ── Tech stack ── */
-  .stack-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-  }
-
-  .stack-tag {
-    font-family: var(--mono);
-    font-size: 0.68rem;
-    letter-spacing: 0.06em;
-    padding: 0.28rem 0.7rem;
-    border-radius: 2px;
-    background: rgba(107,168,138,0.1);
-    color: var(--green);
-    border: 0.5px solid rgba(107,168,138,0.3);
-  }
-
   /* ── Leadership ── */
-  .leadership-list {
-    list-style: none;
-  }
+  .leadership-list { list-style: none; }
 
   .leadership-list li {
-    padding: 1.3rem 0;
-    border-bottom: 0.5px solid var(--border);
+    padding: 1.4rem 0;
+    border-bottom: 0.5px solid rgba(0,201,177,0.1);
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 1.2rem;
+    gap: 1.3rem;
     align-items: start;
+    transition: padding-left 0.2s;
   }
 
-  .leadership-list li:first-child { border-top: 0.5px solid var(--border); }
+  .leadership-list li:first-child { border-top: 0.5px solid rgba(0,201,177,0.1); }
+  .leadership-list li:hover { padding-left: 0.4rem; }
 
   .li-marker {
     font-family: var(--mono);
     font-size: 0.7rem;
-    color: var(--amber);
+    color: var(--coral);
     margin-top: 0.35rem;
+    font-weight: 500;
   }
 
   .li-role {
@@ -437,19 +536,34 @@
     font-weight: 400;
   }
 
+  .li-role a {
+    color: var(--teal);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,201,177,0.3);
+    transition: color 0.2s;
+  }
+
+  .li-role a:hover { color: var(--teal2); }
+
   .li-desc {
-    font-size: 0.85rem;
+    font-size: 0.86rem;
     color: var(--muted);
-    margin-top: 0.2rem;
-    line-height: 1.6;
+    margin-top: 0.22rem;
+    line-height: 1.65;
+  }
+
+  .li-desc a {
+    color: rgba(122,148,168,0.9);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(122,148,168,0.2);
   }
 
   /* ── Footer ── */
   footer {
     position: relative;
     z-index: 1;
-    padding: 3rem 2.5rem;
-    border-top: 0.5px solid var(--border);
+    padding: 2.5rem 2.5rem;
+    border-top: 0.5px solid rgba(0,201,177,0.12);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -481,42 +595,22 @@
     transition: color 0.2s;
   }
 
-  .footer-links a:hover { color: var(--green); }
+  .footer-links a:hover { color: var(--teal); }
 
-  /* ── Animation ── */
+  /* ── Animations ── */
   @keyframes fadeUp {
     to { opacity: 1; transform: none; }
   }
 
-  /* ── Highlight bar on hover ── */
-  .about-text p:first-child {
-    padding-left: 1.2rem;
-    border-left: 2px solid var(--green2);
-    font-size: 1.07rem;
-  }
-
-  /* ── Responsive nav ── */
+  /* ── Responsive ── */
   @media (max-width: 600px) {
     nav { padding: 1rem 1.4rem; }
-    .nav-links { gap: 1.2rem; }
+    .nav-links { gap: 1.1rem; }
     .hero { padding: 6rem 1.4rem 3rem; }
     .section { padding: 3.5rem 1.4rem; }
     .divider { margin: 0 1.4rem; }
     footer { padding: 2rem 1.4rem; }
     .scroll-hint { display: none; }
-  }
-
-  /* ── Contour line animation ── */
-  .topo-line {
-    stroke: #6ba88a;
-    stroke-width: 0.8;
-    fill: none;
-    animation: drift 40s linear infinite;
-  }
-
-  @keyframes drift {
-    from { transform: translateY(0); }
-    to   { transform: translateY(-120px); }
   }
 </style>
 </head>
@@ -526,21 +620,20 @@
 <svg class="topo-bg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
   <defs>
     <pattern id="topo" x="0" y="0" width="1440" height="120" patternUnits="userSpaceOnUse">
-      <path class="topo-line" style="animation-delay:0s"    d="M-100,30 Q180,10 360,40 T720,28 T1080,42 T1540,22" />
-      <path class="topo-line" style="animation-delay:-5s"   d="M-100,55 Q200,35 400,62 T760,50 T1100,68 T1540,48" />
-      <path class="topo-line" style="animation-delay:-10s"  d="M-100,80 Q220,60 440,84 T800,72 T1150,90 T1540,74" />
-      <path class="topo-line" style="animation-delay:-15s"  d="M-100,105 Q240,85 480,106 T840,94 T1200,112 T1540,100"/>
+      <path class="topo-line" style="animation-delay:0s;stroke:var(--teal);"    d="M-100,30 Q180,10 360,40 T720,28 T1080,42 T1540,22" />
+      <path class="topo-line" style="animation-delay:-6s;stroke:var(--teal);"   d="M-100,55 Q200,35 400,62 T760,50 T1100,68 T1540,48" />
+      <path class="topo-line" style="animation-delay:-12s;stroke:var(--coral);opacity:0.5" d="M-100,80 Q220,60 440,84 T800,72 T1150,90 T1540,74" />
+      <path class="topo-line" style="animation-delay:-18s;stroke:var(--teal);"  d="M-100,105 Q240,85 480,106 T840,94 T1200,112 T1540,100"/>
     </pattern>
   </defs>
   <rect width="1440" height="900" fill="url(#topo)" />
-  <!-- Additional scattered contour groups for depth -->
-  <g opacity="0.6">
-    <ellipse cx="220" cy="340" rx="310" ry="90" stroke="#6ba88a" stroke-width="0.6" fill="none" opacity="0.4"/>
-    <ellipse cx="220" cy="340" rx="250" ry="68" stroke="#6ba88a" stroke-width="0.6" fill="none" opacity="0.3"/>
-    <ellipse cx="220" cy="340" rx="190" ry="48" stroke="#6ba88a" stroke-width="0.6" fill="none" opacity="0.2"/>
-    <ellipse cx="1180" cy="620" rx="280" ry="80" stroke="#c9884c" stroke-width="0.6" fill="none" opacity="0.3"/>
-    <ellipse cx="1180" cy="620" rx="210" ry="58" stroke="#c9884c" stroke-width="0.6" fill="none" opacity="0.2"/>
-    <ellipse cx="1180" cy="620" rx="140" ry="38" stroke="#c9884c" stroke-width="0.6" fill="none" opacity="0.15"/>
+  <g opacity="0.55">
+    <ellipse cx="220" cy="340" rx="310" ry="90" stroke="#00c9b1" stroke-width="0.8" fill="none" opacity="0.35"/>
+    <ellipse cx="220" cy="340" rx="240" ry="65" stroke="#00c9b1" stroke-width="0.8" fill="none" opacity="0.22"/>
+    <ellipse cx="220" cy="340" rx="170" ry="44" stroke="#00c9b1" stroke-width="0.8" fill="none" opacity="0.14"/>
+    <ellipse cx="1180" cy="620" rx="280" ry="82" stroke="#e8622a" stroke-width="0.8" fill="none" opacity="0.28"/>
+    <ellipse cx="1180" cy="620" rx="205" ry="58" stroke="#e8622a" stroke-width="0.8" fill="none" opacity="0.18"/>
+    <ellipse cx="1180" cy="620" rx="132" ry="36" stroke="#e8622a" stroke-width="0.8" fill="none" opacity="0.12"/>
   </g>
 </svg>
 
@@ -558,11 +651,11 @@
 
 <main>
 
-  <!-- ── HERO ── -->
-  <section style="position: relative;">
+  <!-- HERO -->
+  <section style="position:relative;">
     <div class="hero">
       <div class="hero-inner">
-        <div class="hero-label">CIRES Earth Lab · ESIIL · CU Boulder</div>
+        <div class="hero-label">CIRES Earth Lab &nbsp;&middot;&nbsp; ESIIL &nbsp;&middot;&nbsp; CU Boulder</div>
         <h1 class="hero-name">Lilly Jones</h1>
         <div class="hero-phd">PhD, Geological Engineering &amp; Environmental Hazards Modeler</div>
         <p class="hero-tagline">
@@ -585,7 +678,7 @@
 
   <div class="divider"></div>
 
-  <!-- ── ABOUT ── -->
+  <!-- ABOUT -->
   <section id="about" class="section">
     <div class="sec-label">Background</div>
     <h2 class="sec-title">About</h2>
@@ -598,7 +691,7 @@
           My research integrates multispectral remote sensing data, large environmental datasets, and reproducible computational pipelines. My geospatial stack spans Python, R, ArcGIS, QGIS, CyVerse, and High-Performance Computing environments. Current CIRES-funded work investigates whether geospatial structure in model residuals can be leveraged to improve predictions in data- and sensor-poor regions.
         </p>
         <p>
-          I am also the owner and primary data scientist of <a href="https://github.com/daearconsulting" target="_blank" rel="noopener" style="color:var(--green);text-decoration:none;border-bottom:1px solid rgba(107,168,138,0.35);">Daear Consulting, LLC</a>, currently partnering with Oglala Lakota College on a USDA-NIFA funded grant to build hydrologic and agricultural data cubes supporting analysis, teaching, and data sovereignty workflows.
+          I am also the owner and primary data scientist of <a href="https://github.com/daearconsulting" target="_blank" rel="noopener">Daear Consulting, LLC</a>, currently partnering with Oglala Lakota College on a USDA-NIFA funded grant to build hydrologic and agricultural data cubes supporting analysis, teaching, and data sovereignty workflows.
         </p>
         <p>
           As a Tribal college graduate and former Tribal college faculty member at Oglala Lakota College, I am committed to developing geospatial data cubes and reproducible, sovereignty-aligned workflows that center and support Tribal partners in environmental research.
@@ -616,8 +709,8 @@
             <div class="edu-school">Oglala Lakota College</div>
           </div>
         </div>
-        <div class="sidebar-card" style="margin-top:1.1rem;">
-          <div class="sidebar-label">Languages & Environments</div>
+        <div class="sidebar-card">
+          <div class="sidebar-label">Languages &amp; Environments</div>
           <div class="stack-wrap">
             <span class="stack-tag">Python</span>
             <span class="stack-tag">R</span>
@@ -626,7 +719,7 @@
             <span class="stack-tag">VSCode</span>
           </div>
         </div>
-        <div class="sidebar-card" style="margin-top:1.1rem;">
+        <div class="sidebar-card">
           <div class="sidebar-label">Geospatial</div>
           <div class="stack-wrap">
             <span class="stack-tag">GDAL/OGR</span>
@@ -639,8 +732,8 @@
             <span class="stack-tag">QGIS</span>
           </div>
         </div>
-        <div class="sidebar-card" style="margin-top:1.1rem;">
-          <div class="sidebar-label">Data & Compute</div>
+        <div class="sidebar-card">
+          <div class="sidebar-label">Data &amp; Compute</div>
           <div class="stack-wrap">
             <span class="stack-tag">xarray</span>
             <span class="stack-tag">zarr</span>
@@ -649,8 +742,8 @@
             <span class="stack-tag">numpy</span>
           </div>
         </div>
-        <div class="sidebar-card" style="margin-top:1.1rem;">
-          <div class="sidebar-label">Cloud & Data Access</div>
+        <div class="sidebar-card">
+          <div class="sidebar-label">Cloud &amp; Data Access</div>
           <div class="stack-wrap">
             <span class="stack-tag">CyVerse</span>
             <span class="stack-tag">STAC</span>
@@ -661,8 +754,8 @@
             <span class="stack-tag">HPC/SLURM</span>
           </div>
         </div>
-        <div class="sidebar-card" style="margin-top:1.1rem;">
-          <div class="sidebar-label">Modeling & Visualization</div>
+        <div class="sidebar-card">
+          <div class="sidebar-label">Modeling &amp; Visualization</div>
           <div class="stack-wrap">
             <span class="stack-tag">scikit-learn</span>
             <span class="stack-tag">scipy</span>
@@ -673,8 +766,8 @@
             <span class="stack-tag">seaborn</span>
           </div>
         </div>
-        <div class="sidebar-card" style="margin-top:1.1rem;">
-          <div class="sidebar-label">Remote Sensing & Data Sources</div>
+        <div class="sidebar-card">
+          <div class="sidebar-label">Remote Sensing &amp; Data Sources</div>
           <div class="stack-wrap">
             <span class="stack-tag">Landsat</span>
             <span class="stack-tag">Sentinel-2</span>
@@ -695,7 +788,7 @@
 
   <div class="divider"></div>
 
-  <!-- ── RESEARCH ── -->
+  <!-- RESEARCH -->
   <section id="research" class="section">
     <div class="sec-label">Areas of Focus</div>
     <h2 class="sec-title">Research</h2>
@@ -733,7 +826,7 @@
 
   <div class="divider"></div>
 
-  <!-- ── LEADERSHIP ── -->
+  <!-- SERVICE -->
   <section id="leadership" class="section">
     <div class="sec-label">Leadership &amp; Teaching</div>
     <h2 class="sec-title">Service</h2>
@@ -741,29 +834,29 @@
       <li>
         <span class="li-marker">01</span>
         <div>
-          <div class="li-role">Former Technical Lead Maka Sitomniye Working Group</div>
+          <div class="li-role">Former Technical Lead &mdash; Maka Sitomniye Working Group</div>
           <div class="li-desc">Leading technical development of geospatial data cubes and sovereignty-aligned computational workflows in collaboration with Tribal partners.</div>
         </div>
       </li>
       <li>
         <span class="li-marker">02</span>
         <div>
-          <div class="li-role">Instructor Earth Lab and ESIIL</div>
+          <div class="li-role">Instructor &mdash; Earth Lab and ESIIL</div>
           <div class="li-desc">Teaching reproducible data science, open-source geospatial tools, and environmental analysis to emerging scientists at CU Boulder.</div>
         </div>
       </li>
       <li>
         <span class="li-marker">03</span>
         <div>
-          <div class="li-role">Former Faculty at Oglala Lakota College</div>
+          <div class="li-role">Former Faculty &mdash; Oglala Lakota College</div>
           <div class="li-desc">Tribal college educator bringing Indigenous knowledge frameworks into earth and environmental science curriculum.</div>
         </div>
       </li>
       <li>
         <span class="li-marker">04</span>
         <div>
-          <div class="li-role">Co-Owner &amp; Primary Data Scientist <a href="https://github.com/daearconsulting" target="_blank" rel="noopener" style="color:var(--green);text-decoration:none;border-bottom:1px solid rgba(107,168,138,0.35);">Daear Consulting, LLC</a></div>
-          <div class="li-desc">Consulting with <a href="https://github.com/olc-techsupport" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:none;border-bottom:1px solid rgba(138,154,170,0.25);">Oglala Lakota College</a> on a USDA-NIFA funded grant to build hydrologic and agricultural data cubes for analysis, teaching, and data sovereignty workflows.</div>
+          <div class="li-role">Owner &amp; Primary Data Scientist &mdash; <a href="https://github.com/daearconsulting" target="_blank" rel="noopener">Daear Consulting, LLC</a></div>
+          <div class="li-desc">Consulting with <a href="https://github.com/olc-techsupport" target="_blank" rel="noopener">Oglala Lakota College</a> on a USDA-NIFA funded grant to build hydrologic and agricultural data cubes for analysis, teaching, and data sovereignty workflows.</div>
         </div>
       </li>
     </ul>
@@ -771,19 +864,17 @@
 
 </main>
 
-<!-- ── FOOTER ── -->
 <footer>
-  <span class="footer-name">Lilly Jones, PhD &nbsp;·&nbsp; CU Boulder</span>
+  <span class="footer-name">Lilly Jones, PhD &nbsp;&middot;&nbsp; CU Boulder</span>
   <ul class="footer-links">
     <li><a href="https://github.com/daearconsulting" target="_blank" rel="noopener">Daear LLC</a></li>
     <li><a href="https://github.com/lijo8146" target="_blank" rel="noopener">GitHub</a></li>
     <li><a href="https://www.linkedin.com/in/lillyjones3/" target="_blank" rel="noopener">LinkedIn</a></li>
-    <li><a href="mailto:">Contact</a></li>
+    <li><a href="mailto:daearconsulting@gmail.com">Contact</a></li>
   </ul>
 </footer>
 
 <script>
-  // Intersection observer for scroll-in sections
   const sections = document.querySelectorAll('.section');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
@@ -792,7 +883,7 @@
         io.unobserve(e.target);
       }
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.1 });
   sections.forEach(s => io.observe(s));
 </script>
 </body>
