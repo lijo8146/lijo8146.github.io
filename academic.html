@@ -124,7 +124,6 @@
 
   .nav-links a:hover { color: var(--teal); }
 
-  /* FIX 1: nav overflow on mid-size screens */
   @media (max-width: 820px) {
     .nav-links { gap: 1rem; }
     .nav-links a { font-size: 0.65rem; }
@@ -174,8 +173,7 @@
     background: linear-gradient(90deg, var(--teal), var(--teal2));
   }
 
-  /* Hero name keeps gradient — it's the design statement */
-  .hero-name {
+   .hero-name {
     font-family: var(--serif);
     font-size: clamp(3.4rem, 7.5vw, 6.5rem);
     font-weight: 300;
@@ -273,7 +271,7 @@
     gap: 0.5rem;
   }
 
-  /* FIX 2: scroll line now points downward below the word */
+  
   .scroll-hint::after {
     content: '';
     width: 1px;
@@ -318,8 +316,7 @@
     display: inline-block;
   }
 
-  /* FIX 3: section titles use solid color — gradient text is fragile
-     and invisible in PDF/some screen readers; hero carries the visual weight */
+  
   .sec-title {
     font-family: var(--serif);
     font-size: clamp(2rem, 3.8vw, 2.8rem);
@@ -677,7 +674,7 @@
         </div>
       </div>
     </div>
-    <!-- FIX 2: scroll hint is now a column flex so the line falls below the word -->
+    
     <div class="scroll-hint" style="left:2.5rem;">Scroll</div>
   </section>
 
@@ -797,7 +794,7 @@
   <section id="research" class="section">
     <div class="sec-label">Areas of Focus</div>
     <h2 class="sec-title">Research</h2>
-    <!-- FIX 4: inline SVG icons replace Unicode characters for cross-OS reliability -->
+    
     <div class="research-grid">
 
       <div class="research-item">
@@ -867,7 +864,7 @@
   <div class="divider"></div>
 
   <!-- SERVICE -->
-  <!-- FIX 1: restored missing opening <li> tag on first list item -->
+  
   <section id="leadership" class="section">
     <div class="sec-label">Leadership &amp; Teaching</div>
     <h2 class="sec-title">Service</h2>
