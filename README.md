@@ -6,50 +6,68 @@ CIRES Earth and ESIIL Labs · University of Colorado Boulder
 [![Daear Consulting](https://img.shields.io/badge/GitHub-daearconsulting-181717?style=flat&logo=github)](https://github.com/daearconsulting)
 
 ## About
-I am a hydrogeologist and environmental hazards modeler working at CIRES Earth and ESIIL Labs at the University of Colorado Boulder. My work focuses on predictive modeling, hydrogeologic analysis, and geospatial data science. I build reproducible computational pipelines that translate environmental complexity into actionable models.
+I am a hydrogeologist and environmental hazards modeler working at CIRES Earth and ESIIL Labs at the University of Colorado Boulder. As part of the Education Team, I am one of the instructors for our Graduate Earth Data Science Certificate program, ESIIL Stars, and the Data Short Course. I also participate in the many Hackathons we offer throughout the year. My work focuses on predictive modeling, hydrogeologic analysis, and geospatial data science. I build reproducible computational pipelines that translate environmental complexity into actionable models.
 
 Current CIRES-funded research includes Shadow Ecology - a deep learning method I'm developing to investigate whether model residuals can be leveraged to improve predictions in data- and sensor-poor regions.
 
-I am also the owner and primary data scientist of **[Daear Consulting, LLC](https://github.com/daearconsulting)**, currently partnering with [Oglala Lakota College](https://github.com/olc-techsupport) on a USDA-NIFA funded grant to build hydrologic and agricultural data cubes for analysis, teaching, and Tribal data sovereignty workflows.
+I am also the co-owner and primary data scientist of **[Daear Consulting, LLC](https://github.com/daearconsulting)**, currently partnering with **[Oglala Lakota College](https://github.com/olc-techsupport)** on a USDA-NIFA funded grant to build hydrologic and agricultural data cubes for analysis, teaching, and Tribal data sovereignty workflows.
 
 As a Tribal college graduate and former Tribal college faculty member at Oglala Lakota College, I am committed to sovereignty-aligned workflows and reproducible science that centers Tribal partners in environmental research.
+
+## Portfolio
+
+| Focus | Featured work | What it offers |
+|---|---|---|
+| Teach | [Systems at Play](https://github.com/lijo8146/systems_at_play) · [Scientists Who Code](https://github.com/lijo8146/scientists_who_code_demo_repo) | Accessible, reusable computational learning materials that connect code, modeling, and systems thinking for students and interdisciplinary learners. |
+| Research | [Shadow Ecology](https://github.com/lijo8146/shadow-ecology) · [He Sapa Twin](https://github.com/lijo8146/hesapatwin) | Examples of geospatial and remote-sensing analysis, with an emphasis on reproducible workflows and interpretable computational methods. |
+| Collaborate | [Daear Consulting](https://daearconsulting.com/) · [Oglala Lakota College](https://github.com/olc-techsupport) | Partnership-oriented data science and educational projects grounded in reproducibility, practical learning, and sovereignty-aligned environmental research. |
 
 ## Research Focus
 - Hydrogeologic and Earth systems modeling
 - Fire–vegetation predictive modeling
 - Multispectral remote sensing integration
-- Geospatial structure in model residuals (data/sensor-poor environments)
+- Geospatial structure in model residuals
 - Geospatial data engineering & data cubes
 - Environmental hazard risk modeling
 - Reproducible computational workflows
 - Tribal Data Science
 - Tribal Data Sovereignty
 
+## Games
+
+I created a series exploring common gaming algorithms and systems design concepts here: [Systems at Play](https://github.com/lijo8146/systems_at_play)
+
 ## Tools & Stack
 
 **Languages & Environments**  
-`Python` `R` `Bash` `Jupyter` `VSCode`
+`Python` `R` `C` `Fortran` `Bash` `SQL/MySQL` `Jupyter` `VS Code` `Linux`
 
 **Geospatial**  
-`GDAL/OGR` `rasterio` `geopandas` `shapely` `fiona` `earthpy` `ArcGIS` `QGIS`
+`ArcGIS Pro` `QGIS` `GDAL/OGR` `Rasterio` `GeoPandas` `Shapely` `Fiona` `PyProj` `rtree` `OSMnx` `H3` `GeoPy` `GeoTessera` `GeoTessellation` `Contextily` `PyDeck` `Datashader` `ENVI` `EarthPy` `Remote Sensing` `AlphaEarth Foundations`
 
-**Data & Compute**  
-`xarray` `zarr` `Dask` `pandas` `numpy`
+**Data Engineering**  
+`Pandas` `NumPy` `Xarray` `Dask` `Zarr` `APIs` `STAC` `Data Cubes` `Cloud-native data structures` `Workflow automation`
 
-**Cloud & Data Access**  
-`CyVerse` `STAC` `VSI/VSICURL` `earthaccess` `Planetary Computer` `Docker` `HPC/SLURM`
+**Machine Learning**  
+`Scikit-learn` `PyTorch` `TensorFlow` `Fuzzy Machine Learning` `Statistical Modeling` `Bayesian Methods` `Predictive Modeling` `Feature Engineering` `Deep Learning` `OpenCLIP / RemoteCLIP` `TorchGeo`
 
-**Modeling & Analysis**  
-`scikit-learn` `scipy` `statsmodels`
+**Cloud & Data Access Infrastructure**  
+`AWS (S3, EC2)` `Docker` `HPC/SLURM` `CyVerse` `Planetary Computer` `VSI/VSICURL` `earthaccess` `Cloud-native geospatial workflows` `Version-controlled reproducible pipelines`
+
+**Scientific Computing, Modeling & Analysis**  
+`SciPy` `Statsmodels` `Parallel Computing` `Large Geospatial Datasets` `Environmental Modeling` `NetworkX` `MODFLOW` `Visual MODFLOW` `ParFlow` `AQTESOLV` `Stella 7` `CESM`
 
 **Visualization**  
-`matplotlib` `hvplot` `folium` `seaborn`
+`Matplotlib` `Seaborn` `HoloViews/hvPlot` `Folium` `Tableau`
 
-**Remote Sensing & Data Sources**  
-`Landsat` `Sentinel-2` `MODIS` `NLCD` `EMIT` `Hyperspectral` `SSURGO` `NHD` `NWIS` `NOAA` `3DEP/lidar`
+**Remote Sensing & Earth Observation**  
+`Landsat` `Sentinel-2` `MODIS` `EMIT Hyperspectral` `Copernicus` `NLCD` `SSURGO` `NHD` `NWIS` `NOAA` `3DEP/LiDAR`
 
 **Version Control**  
 `Git` `GitHub`
+
+**Platforms**  
+`Linux` `Windows` `HPC (CURC, ACCESS)` `Cloud (AWS S3, CyVerse)`
 
 ## Leadership & Service
 
@@ -60,7 +78,6 @@ As a Tribal college graduate and former Tribal college faculty member at Oglala 
 | **Owner / Data Scientist** | Daear Consulting, LLC USDA-NIFA grant with Oglala Lakota College |
 | **Participant**            | American Geophysical Union *Voices in Science*                   |
 | **Former Faculty**         | Oglala Lakota College                                              |
-| **Former Technical Lead**  | Maka Sitomniye Working Group                                       |
 
 ## Education
 **PhD, Geology and Geological Engineering** · 2021  
@@ -68,4 +85,6 @@ South Dakota School of Mines and Technology
 
 **BS, Interdisciplinary Earth and Environmental Sciences** · 2013  
 Oglala Lakota College
+
+If you're looking for my "old" GitHub, find it here **[Yawapi](https://github.com/Yawapi)**
 
