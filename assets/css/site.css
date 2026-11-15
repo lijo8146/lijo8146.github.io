@@ -1,10 +1,10 @@
-:root { --bg:#f8f7f2; --panel:#ffffff; --panel2:#edf1ea; --text:#233b31; --muted:#526158; --teal:#285a43; --teal-dark:#285a43; --coral:#9e4b35; --gold:#9e4b35; --line:#d0d8cd; --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',system-ui,sans-serif; --mono:'JetBrains Mono',monospace; }
+:root { --bg:#e6e2d8; --panel:#f0ede5; --panel2:#dce3d8; --text:#233b31; --muted:#526158; --teal:#285a43; --teal-dark:#285a43; --coral:#9e4b35; --gold:#9e4b35; --line:#b8c0b4; --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',system-ui,sans-serif; --mono:'JetBrains Mono',monospace; }
     * { box-sizing:border-box; margin:0; }
     html { scroll-behavior:smooth; }
     body { background:var(--bg); color:var(--text); font:400 17px/1.75 var(--sans); }
     a { color:var(--teal); text-decoration:none; }
     a:hover { color:var(--coral); }
-    nav { position:sticky; top:0; z-index:10; display:flex; justify-content:space-between; align-items:center; padding:1rem 2.5rem; background:rgba(248,247,242,.96); backdrop-filter:blur(14px); border-bottom:1px solid var(--line); }
+    nav { position:sticky; top:0; z-index:10; display:flex; justify-content:space-between; align-items:center; padding:1rem 2.5rem; background:rgba(230,226,216,.97); backdrop-filter:blur(14px); border-bottom:1px solid var(--line); }
     .name { color:var(--text); font:400 1.15rem var(--serif); letter-spacing:.04em; }
     .nav-links { display:flex; gap:1.5rem; list-style:none; }
     .nav-links a { color:var(--muted); font:500 .69rem var(--mono); letter-spacing:.1em; text-transform:uppercase; }
@@ -87,3 +87,8 @@
     .contact-grid h2 { font-size:1.8rem; margin-bottom:1rem; }
     @media (max-width:760px) { nav { align-items:flex-start; gap:1rem; } .name { flex-shrink:0; } .nav-links { gap:.6rem 1rem; } .nav-links li:nth-child(2),.nav-links li:nth-child(3) { display:list-item; } .nav-links a { font-size:.62rem; } .hero { min-height:75vh; } .page-header { padding:3rem 0 2rem; } .contact-grid { grid-template-columns:1fr; } }
     @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+    .work-group + .work-group { margin-top:2.7rem; }
+    .work-heading { margin-bottom:1rem; color:var(--coral); font:500 .75rem var(--mono); letter-spacing:.1em; text-transform:uppercase; }
+    .work-intro { max-width:720px; margin:-.9rem 0 2.4rem; color:var(--muted); }
+    .work-card { min-height:275px; }

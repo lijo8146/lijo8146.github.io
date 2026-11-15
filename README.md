@@ -94,7 +94,7 @@ If you're looking for my "old" GitHub, find it here **[Yawapi](https://github.co
 
 The homepage is `index.html`. Research, Teaching, Publications and Contact are Jekyll pages with explicit permalinks in their Markdown front matter. They use `_layouts/page.html`; all five pages share `assets/css/site.css`.
 
-The palette uses warm white (`#f8f7f2`), forest green (`#285a43`) and terracotta (`#9e4b35`). Edit the CSS custom properties at the top of the stylesheet to change colours consistently.
+The palette uses stone (`#e6e2d8`), forest green (`#285a43`) and terracotta (`#9e4b35`). Edit the CSS custom properties at the top of the stylesheet to change colours consistently.
 
 To preview the production Jekyll build with Ruby and Bundler installed:
 
