@@ -6,13 +6,13 @@ CIRES Earth and ESIIL Labs · University of Colorado Boulder
 [![Daear Consulting](https://img.shields.io/badge/GitHub-daearconsulting-181717?style=flat&logo=github)](https://github.com/daearconsulting)
 
 ## About
-I am a hydrogeologist and environmental hazards modeler working at CIRES Earth and ESIIL Labs at the University of Colorado Boulder. As part of the Education Team, I am one of the instructors for our Graduate Earth Data Science Certificate program, ESIIL Stars, and the Data Short Course. I also participate in the many Hackathons we offer throughout the year. My work focuses on predictive modeling, hydrogeologic analysis, and geospatial data science. I build reproducible computational pipelines that translate environmental complexity into actionable models.
+I am a hydrogeologist and environmental hazards modeler working at CIRES Earth Lab at the University of Colorado Boulder. As part of the Education Team, I am one of the instructors for our Graduate Earth Data Science Certificate program, ESIIL Stars, and the Data Short Course. I also participate in the many Hackathons and trainings we offer throughout the year. My work focuses on predictive modeling, hydrogeologic analysis, and geospatial data science. I build reproducible computational pipelines that translate environmental complexity into actionable models.
 
-Current CIRES-funded research includes Shadow Ecology - a deep learning method I'm developing to investigate whether model residuals can be leveraged to improve predictions in data- and sensor-poor regions.
+Current CIRES-funded research includes Shadow Ecology, a deep learning method I'm developing to investigate whether model residuals can be leveraged to improve predictions in data- and sensor-poor regions.
 
 I am also the co-owner and primary data scientist of **[Daear Consulting, LLC](https://github.com/daearconsulting)**, currently partnering with **[Oglala Lakota College](https://github.com/olc-techsupport)** on a USDA-NIFA funded grant to build hydrologic and agricultural data cubes for analysis, teaching, and Tribal data sovereignty workflows.
 
-As a Tribal college graduate and former Tribal college faculty member at Oglala Lakota College, I am committed to sovereignty-aligned workflows and reproducible science that centers Tribal partners in environmental research.
+As a Tribal college graduate and former Tribal college faculty at Oglala Lakota College, I am committed to sovereignty-aligned workflows and reproducible science that centers Tribal partners in environmental research.
 
 ## Portfolio
 
@@ -24,7 +24,7 @@ As a Tribal college graduate and former Tribal college faculty member at Oglala 
 
 ## Research Focus
 - Hydrogeologic and Earth systems modeling
-- Fire–vegetation predictive modeling
+- Fire modeling
 - Multispectral remote sensing integration
 - Geospatial structure in model residuals
 - Geospatial data engineering & data cubes
@@ -80,10 +80,10 @@ I created a series exploring common gaming algorithms and systems design concept
 | **Former Faculty**         | Oglala Lakota College                                              |
 
 ## Education
-**PhD, Geology and Geological Engineering** · 2021  
+**PhD, Geology and Geological Engineering** 2021  
 South Dakota School of Mines and Technology
 
-**BS, Interdisciplinary Earth and Environmental Sciences** · 2013  
+**BS, Interdisciplinary Earth and Environmental Sciences** 2013  
 Oglala Lakota College
 
 If you're looking for my "old" GitHub, find it here **[Yawapi](https://github.com/Yawapi)**
@@ -91,10 +91,6 @@ If you're looking for my "old" GitHub, find it here **[Yawapi](https://github.co
 
 
 ## Website maintenance
-
-The homepage is `index.html`. Research, Teaching, Publications and Contact are Jekyll pages with explicit permalinks in their Markdown front matter. They use `_layouts/page.html`; all five pages share `assets/css/site.css`.
-
-The palette uses stone (`#e6e2d8`), forest green (`#285a43`) and terracotta (`#9e4b35`). Edit the CSS custom properties at the top of the stylesheet to change colours consistently.
 
 To preview the production Jekyll build with Ruby and Bundler installed:
 

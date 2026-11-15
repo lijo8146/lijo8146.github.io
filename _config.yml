@@ -26,7 +26,7 @@ footer:
       icon: "fab fa-github"
       url: "https://github.com/lijo8146"
 
-# Appearance / SEO
+# Appearance/SEO
 breadcrumbs: false
 search: false
 read_time: false
@@ -34,4 +34,4 @@ show_date: false
 share: false
 
 # Accent colors
-accent_color: "#285A43"  # forest green
+accent_color: "#E5B34E"  # ochre on forest green
