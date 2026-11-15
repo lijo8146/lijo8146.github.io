@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.description | escape }}">
+  <title>{{ page.title | escape }} · Lilly Jones, PhD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head><body><a class="skip-link" href="#main-content">Skip to content</a>
+  <nav aria-label="Main navigation"><a class="name" href="/">Lilly Jones</a><ul class="nav-links"><li><a href="/#about">About</a></li><li><a href="/research/" {% if page.url == "/research/" %}aria-current="page"{% endif %}>Research</a></li><li><a href="/teaching/" {% if page.url == "/teaching/" %}aria-current="page"{% endif %}>Teaching</a></li><li><a href="/publications/" {% if page.url == "/publications/" %}aria-current="page"{% endif %}>Publications</a></li><li><a href="/contact/" {% if page.url == "/contact/" %}aria-current="page"{% endif %}>Contact</a></li></ul></nav><main id="main-content"><header class="page-header"><div class="wrap"><div class="section-label">Lilly Jones, PhD</div><h1>{{ page.title }}</h1><p>{{ page.description }}</p></div></header><div class="wrap"><div class="page-content">{{ content }}</div></div></main>  <footer class="wrap"><span>Lilly Jones, PhD · CU Boulder</span><ul><li><a href="https://github.com/daearconsulting" target="_blank" rel="noopener">Daear LLC</a></li><li><a href="https://github.com/lijo8146" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://www.linkedin.com/in/lillyjones3/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="/contact/" {% if page.url == "/contact/" %}aria-current="page"{% endif %}>Contact</a></li></ul></footer></body></html>

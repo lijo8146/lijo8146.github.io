@@ -1,12 +1,11 @@
-# Navigation
-nav:
+main:
   - title: "Home"
-    url: /
+    url: "/"
   - title: "Research"
-    url: /research/
-  - title: "Publications"
-    url: /publications/
+    url: "/research/"
   - title: "Teaching"
-    url: /teaching/
+    url: "/teaching/"
+  - title: "Publications"
+    url: "/publications/"
   - title: "Contact"
-    url: /contact/
+    url: "/contact/"

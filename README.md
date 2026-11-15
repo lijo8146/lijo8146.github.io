@@ -88,3 +88,19 @@ Oglala Lakota College
 
 If you're looking for my "old" GitHub, find it here **[Yawapi](https://github.com/Yawapi)**
 
+
+
+## Website maintenance
+
+The homepage is `index.html`. Research, Teaching, Publications and Contact are Jekyll pages with explicit permalinks in their Markdown front matter. They use `_layouts/page.html`; all five pages share `assets/css/site.css`.
+
+The palette uses warm white (`#f8f7f2`), forest green (`#285a43`) and terracotta (`#9e4b35`). Edit the CSS custom properties at the top of the stylesheet to change colours consistently.
+
+To preview the production Jekyll build with Ruby and Bundler installed:
+
+```sh
+bundle install
+bundle exec jekyll serve
+```
+
+GitHub Pages builds and deploys through `.github/workflows/jekyll.yml` when changes are pushed to `main`. Review publication status and scheduled presentation dates before publishing updates. The personal CV is not included in the repository.
